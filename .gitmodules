@@ -20,3 +20,6 @@
 [submodule "tools/pytest"]
 	path = tools/pytest
 	url = https://github.com/pytest-dev/pytest.git
+[submodule "tools/webencodings"]
+	path = tools/webencodings
+	url = https://github.com/gsnedders/python-webencodings.git
