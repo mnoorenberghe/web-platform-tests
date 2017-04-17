@@ -5,8 +5,7 @@ test(() => {
   const sab = new SharedArrayBuffer(16);
   const ta = new Int32Array(sab);
 
-  // Test passes if this doesn't throw
-  Atomics.wait(ta, 0, 0, 10);
+  assert_equals(Atomics.wait(ta, 0, 0, 10), "ok");
 }, `[[CanBlock]] in a ${self.constructor.name}`);
 
 done();
